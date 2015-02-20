@@ -1,17 +1,19 @@
 var $ = require('jquery');
 var React = require('react');
 var Repository = require('./repository.jsx');
+var repos = require('./repos.js');
 var RepositoryList = React.createClass({
   getInitialState: function() {
     return { initialRepoList: [] };
   },
 
   componentDidMount: function() {
-    this.fetchRepos(function(repositories) {
-      if (this.isMounted()) {
-        this.setState({ initialRepoList: repositories });
-      }
-    }.bind(this));
+    this.setState({ initialRepoList: repos });
+    // this.fetchRepos(function(repositories) {
+    //   if (this.isMounted()) {
+    //     this.setState({ initialRepoList: repositories });
+    //   }
+    // }.bind(this));
   },
 
   fetchRepos: function(callback) {
@@ -31,7 +33,7 @@ var RepositoryList = React.createClass({
     });
 
     return(
-      <div> {repoNodes} </div>
+      <div className="repo-list"> {repoNodes} </div>
     );
   }
 });

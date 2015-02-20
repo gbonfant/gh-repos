@@ -1,0 +1,62 @@
+body {
+  background: #F3F3ED;
+}
+
+/* ------------------------------------ */
+/* Navbar */
+/* ------------------------------------ */
+
+.navbar__repo {
+  background: #96B763;
+}
+
+.navbar__repo-wrapper {
+  background: #88A559;
+}
+
+.navbar-text__repo {
+  margin-left: 0;
+  color: white !important;
+}
+
+/* ------------------------------------ */
+/* RepositoryList */
+/* ------------------------------------ */
+
+.repo-list {
+  padding: 2em 1em;
+}
+
+.repo-list__wrapper {
+  background: white;
+}
+
+/* ------------------------------------ */
+/* Repository */
+/* ------------------------------------ */
+
+.repo {
+  height: 2.5em;
+  line-height: 2.5em;
+  border-top: .1em solid #F3F3ED;
+}
+
+.repo__name {
+  cursor: pointer;
+  width: 40%;
+}
+
+.repo__name:hover {
+  color: #96B763;
+}
+
+.repo__stats {
+  display: inline-block;
+  margin: 0 .5em;
+  color: #C9C9C3;
+  font-size: .9em;
+}
+
+.repo__stats .glyphicon {
+  margin: 0 .5em;
+}

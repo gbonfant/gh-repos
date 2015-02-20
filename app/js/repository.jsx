@@ -9,10 +9,24 @@ var Repository = React.createClass({
 
   render: function() {
     return(
-      <div>
-        <span>{this.props.name}</span>
-        <div>
-          {this.props.stars} {this.props.watchers} {this.props.forks}
+      <div className="repo">
+        <div className="pull-left repo__name">{this.props.name}</div>
+
+        <div className="pull-right">
+          <div className="repo__stats">
+            <span className="glyphicon glyphicon-star"></span>
+            <span>{this.props.stars}</span>
+          </div>
+
+          <div className="repo__stats">
+            <span className="glyphicon glyphicon-eye-open"></span>
+            <span>{this.props.watchers}</span>
+          </div>
+
+          <div className="repo__stats">
+            <span className="glyphicon glyphicon-random"></span>
+            <span>{this.props.forks}</span>
+          </div>
         </div>
       </div>
     );
