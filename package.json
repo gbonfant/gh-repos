@@ -11,6 +11,7 @@
     "watchify": "^2.3.0"
   },
   "dependencies": {
+    "jquery": "^2.1.3",
     "react": "^0.12.2",
     "react-tools": "^0.12.2"
   },
@@ -19,6 +20,8 @@
     "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build:js": "browserify -t reactify app/js/application.jsx -o src/application.js -d",
+    "watch:js": "watchify -t reactify app/js/*.jsx -o src/application.js -dv"
   }
 }
