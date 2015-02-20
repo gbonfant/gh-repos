@@ -2,9 +2,25 @@
 <html>
   <head>
     <title>Github Public Repos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/base.css">
   </head>
   <body>
-    <div id="react-component"></div>
+    <nav class="navbar navbar-default navbar__repo">
+      <div class="container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 navbar__repo-wrapper">
+          <p class="navbar-text navbar-text__repo">Popular Repositories</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 repo-list__wrapper">
+        <div id="react-component"></div>
+      </div>
+    </div>
 
     <script src="src/application.js"></script>
   </body>
