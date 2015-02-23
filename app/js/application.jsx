@@ -1,5 +1,10 @@
 var React = require('react');
 var RepositoryList = require('./repository_list.jsx');
-var component = <RepositoryList user="gbonfant" />;
+var User = require('./user.jsx');
+var username = 'sindresorhus';
 
-React.render(component, document.getElementById('react-component'));
+var repositoryList = <RepositoryList user={username} />;
+var user = <User user={username} />
+
+React.render(repositoryList, document.getElementById('react-repository-list'));
+React.render(user, document.getElementById('react-user'));
