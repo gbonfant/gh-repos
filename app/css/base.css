@@ -64,3 +64,21 @@ body {
 .repo__stats .glyphicon {
   margin: 0 .5em;
 }
+
+/* ------------------------------------ */
+/* User */
+/* ------------------------------------ */
+
+.user {
+  margin: .3em 0;
+  color: white;
+}
+
+.user__image {
+  width: 3em;
+  height: 3em;
+}
+
+.user__name {
+  margin: 0 1em;
+}
