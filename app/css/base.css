@@ -50,11 +50,15 @@ body {
   color: #96B763;
 }
 
+.repo__stats-wrapper {
+  width: 40%;
+}
+
 .repo__stats {
-  display: inline-block;
   margin: 0 .5em;
   color: #C9C9C3;
   font-size: .9em;
+  width: 25%;
 }
 
 .repo__stats .glyphicon {

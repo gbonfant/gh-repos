@@ -12,21 +12,22 @@ var Repository = React.createClass({
       <div className="repo">
         <div className="pull-left repo__name">{this.props.name}</div>
 
-        <div className="pull-right">
-          <div className="repo__stats">
-            <span className="glyphicon glyphicon-star"></span>
-            <span>{this.props.stars}</span>
+        <div className="pull-right repo__stats-wrapper">
+          <div className="pull-right repo__stats">
+            <span className="glyphicon glyphicon-random"></span>
+            <span>{this.props.forks}</span>
           </div>
 
-          <div className="repo__stats">
+          <div className="pull-right repo__stats">
             <span className="glyphicon glyphicon-eye-open"></span>
             <span>{this.props.watchers}</span>
           </div>
 
-          <div className="repo__stats">
-            <span className="glyphicon glyphicon-random"></span>
-            <span>{this.props.forks}</span>
+          <div className="pull-right repo__stats">
+            <span className="glyphicon glyphicon-star"></span>
+            <span>{this.props.stars}</span>
           </div>
+
         </div>
       </div>
     );
